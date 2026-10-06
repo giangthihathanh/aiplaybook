@@ -1,0 +1,14 @@
+id,name,useCases,owner,version,status,tool,classification,reviewer,nextReview
+PR-QA-REQ-001,Requirement Quality and Gap Review,UC-01,Test Architect,0.9.0,Pilot,Approved AI environment,Internal,QA Lead and Business Analyst,TBD
+PR-QA-TD-001,Multi-Scenario Test Case Generation,UC-02,Test Architect,1.0.0,Approved,Approved AI environment,Internal,QA Reviewer,TBD
+PR-QA-TD-002,Maximum Coverage Scenario Discovery,UC-03,Exploratory Test Lead,0.9.0,Pilot,Approved AI environment,Internal,Security Champion when applicable,TBD
+PR-QA-BDD-001,BDD Scenario Generation,UC-04,BDD Analyst,0.9.0,Pilot,Approved AI environment,Internal,QA Lead,TBD
+PR-QA-API-001,API Test Design,UC-04,API Test Lead,0.9.0,Pilot,Approved AI environment,Internal,Automation Lead,TBD
+PR-QA-RPT-001,Executive Release-Readiness Summary,UC-07,Release Manager,1.0.0,Approved,Approved AI environment,Internal,Release Board,TBD
+PR-QA-RPT-002,Daily Failure Summary,UC-05,QA Lead,1.0.0,Approved,Approved AI environment,Internal,Automation Lead,TBD
+PR-QA-RPT-003,Weekly Quality Trend Report,UC-06,QA Manager,0.9.0,Pilot,Approved AI environment,Internal,Reporting Owner,TBD
+PR-QA-DATA-001,Multi-Suite Data Plan,UC-08,Test Data Lead,1.0.0,Approved,Approved AI environment,Internal,Data Steward,TBD
+PR-QA-DATA-002,Excel Data Generation,UC-09,Automation Engineer,0.9.0,Pilot,Approved AI environment,Internal,Import Test Lead,TBD
+PR-QA-DATA-003,Privacy-Safe Anonymization Planning,UC-11,Privacy Lead,0.8.0,Controlled Candidate,Approved AI environment,Confidential,Data Owner,TBD
+PR-QA-DATA-004,Relational Synthetic Dataset,UC-10,Test Data Architect,0.8.0,Candidate,Approved AI environment,Internal,Data Owner,TBD
+PR-QA-ENG-001,Governed Code and SQL Generation,UC-12,Automation Architect,0.8.0,Candidate,Approved coding assistant,Internal,Domain QA Reviewer,TBD
