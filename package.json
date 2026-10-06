@@ -1,1 +1,21 @@
-{"name":"ai-test-manager-hub","private":true,"version":"1.5.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview","check":"node scripts/check.mjs","quality":"npm run check && npm run build"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","lucide-react":"latest"},"devDependencies":{}}
+{
+  "name": "ai-test-manager-hub",
+  "private": true,
+  "version": "1.6.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "node scripts/check.mjs",
+    "quality": "npm run check && npm run build"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {}
+}
