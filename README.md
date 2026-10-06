@@ -1,8 +1,11 @@
-# AI Test Manager Hub v1.1
-Sprint 1 adds a professional Home page, Use Case filters, JSON-driven Prompt Registry, POC readiness views, Documentation Center and a non-fabricated readiness dashboard.
+# AI Test Manager Hub v1.5
+
+Build-ready Vite + React Hub with local public archive of Hải’s Prompt Library and all currently supplied QA learning resources.
 
 ```bash
 npm install
+npm run quality
 npm run dev
-npm run build
 ```
+
+Deploy with the included GitHub Pages workflow.
