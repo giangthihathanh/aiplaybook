@@ -1,0 +1,37 @@
+name: POC Evidence Submission
+description: Submit or update approved POC evidence metadata.
+title: "[POC Evidence]: "
+labels: ["poc", "evidence"]
+body:
+  - type: dropdown
+    id: poc
+    attributes:
+      label: POC
+      options: [POC-01, POC-02, POC-03]
+    validations:
+      required: true
+  - type: textarea
+    id: sample
+    attributes:
+      label: Observation period and sample size
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Evidence sources and approved storage locations
+    validations:
+      required: true
+  - type: textarea
+    id: results
+    attributes:
+      label: KPI results with denominators
+    validations:
+      required: true
+  - type: dropdown
+    id: governance
+    attributes:
+      label: Governance Gate
+      options: [PASS, FAIL, Not Assessed]
+    validations:
+      required: true

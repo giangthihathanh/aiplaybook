@@ -1,12 +1,14 @@
 {
   "name": "ai-test-manager-hub",
   "private": true,
-  "version": "1.2.0",
+  "version": "1.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check": "node scripts/check-repository.mjs",
+    "quality": "npm run check && npm run build"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

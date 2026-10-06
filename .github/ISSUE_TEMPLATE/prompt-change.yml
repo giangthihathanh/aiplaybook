@@ -1,0 +1,36 @@
+name: Prompt or Workflow Change
+description: Request a governed prompt/workflow change and evaluation.
+title: "[Prompt Change]: "
+labels: ["prompt", "change-control"]
+body:
+  - type: input
+    id: asset
+    attributes:
+      label: Prompt or Workflow ID and current version
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Proposed version impact
+      options: [Major, Minor, Patch, Unsure]
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: Requested behavior and reason
+    validations:
+      required: true
+  - type: textarea
+    id: evaluation
+    attributes:
+      label: Evaluation set and acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: risk
+    attributes:
+      label: Data classification, new risks and rollback version
+    validations:
+      required: true
