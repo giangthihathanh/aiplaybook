@@ -1,11 +1,18 @@
-# AI Test Manager Hub v1.5
+# AI Test Manager Hub Content Pack v1.7
 
-Build-ready Vite + React Hub with local public archive of Hải’s Prompt Library and all currently supplied QA learning resources.
+This package contains detailed web content for:
 
-```bash
-npm install
-npm run quality
-npm run dev
-```
+1. Expanded Documentation Center
+2. Hải’s QA Knowledge Hub page
+3. AI Test Management Program Status Dashboard
 
-Deploy with the included GitHub Pages workflow.
+## Files
+
+- `public/data/documentation.json`: structured content for Documentation Center cards and detail views.
+- `public/data/program-status.json`: structured data for program status cards, POC readiness, and milestones.
+- `docs/content/QA_KNOWLEDGE_HUB_PAGE.md`: full page copy for the QA Knowledge Hub.
+- `docs/content/PROGRAM_STATUS_DASHBOARD.md`: dashboard wording, definitions, and status logic.
+
+## Integration note
+
+To integrate these files into the current React application, the latest repository source is required, especially `src/App.jsx` and `src/style.css`. Do not overwrite the current application with an older generated version.

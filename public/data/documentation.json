@@ -1,0 +1,56 @@
+{
+  "lastUpdated": "2026-10-08",
+  "groups": [
+    {
+      "id": "program-documents",
+      "title": "Program Documents",
+      "description": "Core documents defining the AI Test Management Program, its operating principles, use cases, prompt standards, and controlled adoption approach.",
+      "items": [
+        {"id":"DOC-001","title":"AI Playbook for Test Managers","version":"3.2","status":"Approved","type":"Word Document","description":"Primary training and operating guide covering AI-assisted test design, reporting, test data management, human review, traceability, risks, evidence, and scale readiness.","audience":"Test Managers, QA Leads, Test Architects, Automation Engineers","whenToUse":"Read first when joining the program or preparing a new POC.","path":"./docs/AI_Playbook_for_Test_Managers_Complete_Revised_v3.2_TOC_PageNumbers.docx"},
+        {"id":"DOC-002","title":"Combined Use Case Catalog","version":"1.0","status":"Active","type":"Markdown","description":"Consolidated catalog of the program’s reusable AI-supported testing use cases, business objectives, inputs, outputs, KPI expectations, risks, and controls.","audience":"Test Managers, POC Leads, QA Practitioners","whenToUse":"Use when selecting or proposing an AI-supported QA workflow.","path":"./docs/AI_Test_Manager_Combined_Catalog.md"},
+        {"id":"DOC-003","title":"Program One-Page Summary","version":"1.0","status":"Active","type":"Markdown","description":"Management-level summary of program purpose, core POCs, expected benefits, governance position, and current readiness.","audience":"Chapter Leads, Sponsors, Top Management","whenToUse":"Use for stakeholder introduction and management presentations.","path":"./docs/AI_Test_Manager_One_Page_Summary.md"}
+      ]
+    },
+    {
+      "id": "governance",
+      "title": "Governance and Control",
+      "description": "Controlled documents defining ownership, approval gates, change management, incidents, and scale decisions.",
+      "items": [
+        {"id":"GOV-001","title":"Governance Center","version":"1.0","status":"Approved","type":"Markdown","description":"Defines use-case lifecycle, prompt lifecycle, mandatory human review gates, incident severity, and review cadence.","audience":"Program Lead, POC Leads, Reviewers","whenToUse":"Use before approving a pilot, operational use, or scale decision.","path":"./governance/GOVERNANCE_CENTER.md"},
+        {"id":"GOV-002","title":"RACI Matrix","version":"1.0","status":"Approved","type":"Markdown","description":"Assigns Responsible, Accountable, Consulted, and Informed roles for program scope, prompts, evidence, incidents, reporting, and scaling.","audience":"Program Lead, Chapter Lead, POC Leads","whenToUse":"Use when assigning ownership or resolving approval ambiguity.","path":"./governance/RACI.md"},
+        {"id":"GOV-003","title":"Scale Decision Checklist","version":"1.0","status":"Approved","type":"Markdown","description":"Mandatory checklist for ownership, data classification, workflow control, evidence quality, minimum sample, score threshold, and unresolved incidents.","audience":"Program Lead, Sponsor, Independent Reviewer","whenToUse":"Use before moving any POC to Approved for Scale.","path":"./governance/SCALE_CHECKLIST.md"},
+        {"id":"GOV-004","title":"Prompt and Workflow Change Control","version":"1.0","status":"Approved","type":"Markdown","description":"Defines semantic versioning, change records, evaluation requirements, reviewer approval, rollback version, and effective date.","audience":"Prompt Owners, Engineers, QA Reviewers","whenToUse":"Use whenever prompt or workflow behavior changes.","path":"./governance/CHANGE_CONTROL.md"},
+        {"id":"GOV-005","title":"AI Control Incident Template","version":"1.0","status":"Approved","type":"Markdown","description":"Standard record for incident severity, impact, containment, evidence, root cause, corrective action, regression coverage, ownership, and closure.","audience":"POC Leads, Security, Privacy, QA Reviewers","whenToUse":"Use for privacy, security, traceability, release-policy, data-integrity, or material quality incidents.","path":"./governance/INCIDENT_TEMPLATE.md"}
+      ]
+    },
+    {
+      "id": "measurement",
+      "title": "Measurement and Reporting",
+      "description": "Definitions and templates used to calculate program value and quality consistently.",
+      "items": [
+        {"id":"MET-001","title":"KPI Definitions","version":"1.0","status":"Active","type":"Markdown","description":"Controlled definitions for effort reduction, cycle time, acceptance rate, traceability, arithmetic accuracy, reproducibility, defect leakage, and governance compliance.","audience":"POC Leads, Data Analysts, QA Managers","whenToUse":"Use before collecting metrics or comparing manual and AI-assisted workflows.","path":"./dashboard/KPI_DEFINITIONS.md"},
+        {"id":"MET-002","title":"Dashboard Specification","version":"1.0","status":"Active","type":"Markdown","description":"Defines dashboard sections, source fields, calculation rules, readiness states, and drill-through expectations.","audience":"QA Managers, BI Developers, Program Lead","whenToUse":"Use when implementing or validating program reporting.","path":"./dashboard/DASHBOARD_SPECIFICATION.md"},
+        {"id":"MET-003","title":"POC Scorecard Template","version":"1.0","status":"Template Ready","type":"Template","description":"Weighted assessment of value, quality, governance, usability, support readiness, and residual risk. Scale recommendation requires an overall score of at least 80 and Governance Gate PASS.","audience":"POC Leads, Independent Reviewer, Sponsor","whenToUse":"Use after representative evidence has been collected.","path":"./dashboard/POC_SCORECARD_TEMPLATE.md"}
+      ]
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence and Pilot Execution",
+      "description": "Guidance and templates for capturing reproducible POC results without presenting sample data as real evidence.",
+      "items": [
+        {"id":"EVD-001","title":"POC-01 Evidence Guide","version":"1.0","status":"Template Ready","type":"Guide","description":"Captures manual versus AI-assisted test design effort, requirement mapping, duplicate rate, reviewer disposition, unsupported behavior, and approved final suite.","audience":"POC-01 Lead, Test Designers, Reviewers","whenToUse":"Use for each representative story included in the test-case-generation pilot.","path":"./evidence/POC-01_EVIDENCE_GUIDE.md"},
+        {"id":"EVD-002","title":"POC-02 Evidence Guide","version":"1.0","status":"Template Ready","type":"Guide","description":"Captures verified run metrics, report preparation time, arithmetic consistency, evidence linkage, release-policy application, and stakeholder acceptance.","audience":"POC-02 Lead, QA Leads, Release Manager","whenToUse":"Use for every reporting run included in the pilot sample.","path":"./evidence/POC-02_EVIDENCE_GUIDE.md"},
+        {"id":"EVD-003","title":"POC-03 Evidence Guide","version":"1.0","status":"Template Ready","type":"Guide","description":"Captures preparation effort, schema and seed, valid-row conformance, negative-rule isolation, referential integrity, workbook validation, reproducibility, and privacy review.","audience":"POC-03 Lead, Test Data Reviewers, Privacy Reviewer","whenToUse":"Use for every generated dataset or import workbook in the pilot.","path":"./evidence/POC-03_EVIDENCE_GUIDE.md"},
+        {"id":"EVD-004","title":"Release Checklist","version":"1.0","status":"Active","type":"Checklist","description":"Verifies content ownership, identifiers, data classification, prompt version, evidence, links, accessibility, repository checks, build status, and deployment smoke test.","audience":"Repository Maintainer, Reviewer, Program Lead","whenToUse":"Use before each Hub release.","path":"./operations/RELEASE_CHECKLIST.md"}
+      ]
+    },
+    {
+      "id": "community",
+      "title": "Community References",
+      "description": "Contributor-owned learning resources retained with attribution, permission metadata, and links to original sources.",
+      "items": [
+        {"id":"REF-001","title":"Hải’s QA Knowledge Hub","version":"Local Public Reference","status":"Available","type":"Community Reference","description":"Contributor-owned QA reference collection containing Prompt Library, Playwright, Katalon, Elasticsearch DSL, Kibana DSL Converter, career roadmaps, technical flows, guides, and attribution information.","audience":"QA Practitioners, Test Managers, Automation Engineers","whenToUse":"Use for self-learning, prompt discovery, technical reference, and community knowledge sharing.","path":"./references/hai-prompt-library/index.html","externalPath":"https://lhlhai.github.io/prompt-library/"}
+      ]
+    }
+  ]
+}

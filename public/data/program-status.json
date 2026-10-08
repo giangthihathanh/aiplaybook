@@ -1,0 +1,30 @@
+{
+  "asOfDate": "2026-10-08",
+  "overallStatus": "Foundation Complete - Evidence Collection Pending",
+  "overallRag": "Amber",
+  "summary": "The program foundation, governance model, documentation, use-case catalog, prompt registry, POC templates, and community knowledge archive are available. Real POC evidence and scale decisions are not yet complete.",
+  "metrics": [
+    {"id":"STATUS-01","name":"AI Playbook","value":"v3.2","status":"Approved","rag":"Green","detail":"Standardized three-POC structure, updated table of contents, and verified page numbers."},
+    {"id":"STATUS-02","name":"POC Framework","value":"3 POCs","status":"Template Ready","rag":"Green","detail":"POC-01 Test Case Generation, POC-02 Reporting, and POC-03 Test Data Management are defined."},
+    {"id":"STATUS-03","name":"Use Case Catalog","value":"12 Use Cases","status":"Active","rag":"Green","detail":"Reusable use cases cover test design, reporting, test data, and engineering support."},
+    {"id":"STATUS-04","name":"Prompt Registry","value":"13 Records","status":"Controlled","rag":"Green","detail":"Program prompts have IDs, owners, versions, use-case mapping, and lifecycle status."},
+    {"id":"STATUS-05","name":"Governance","value":"G1-G5","status":"Approved","rag":"Green","detail":"Lifecycle, review gates, RACI, change control, incidents, and scale checklist are available."},
+    {"id":"STATUS-06","name":"Documentation Center","value":"5 Collections","status":"Active","rag":"Green","detail":"Program, governance, measurement, evidence, and community documents are organized."},
+    {"id":"STATUS-07","name":"Community Knowledge","value":"Local + External","status":"Available","rag":"Green","detail":"Hải’s QA Knowledge Hub is retained locally with attribution and an external source link."},
+    {"id":"STATUS-08","name":"Real POC Evidence","value":"0/3 Completed","status":"Pending","rag":"Amber","detail":"Manual baselines, representative samples, KPI results, and reviewer evidence must be collected."},
+    {"id":"STATUS-09","name":"Independent Validation","value":"Not Started","status":"Pending","rag":"Amber","detail":"Material KPI values and governance findings require independent reproduction or review."},
+    {"id":"STATUS-10","name":"Scale Decision","value":"Not Assessed","status":"Pending","rag":"Amber","detail":"No POC should be presented as scale-ready until score >= 80, Governance Gate PASS, and critical incidents are closed."}
+  ],
+  "pocs": [
+    {"id":"POC-01","name":"AI-assisted Test Case Generation","framework":"Complete","prompt":"Pilot","evidence":"Real Data Pending","governance":"Not Assessed","scale":"Not Assessed","nextAction":"Select at least three representative stories, record manual baseline, run controlled prompt, review outputs, and calculate effort and coverage KPI."},
+    {"id":"POC-02","name":"AI Test Summary and Executive Reporting","framework":"Complete","prompt":"Pilot","evidence":"Real Data Pending","governance":"Not Assessed","scale":"Not Assessed","nextAction":"Run at least ten representative reporting cycles using verified metrics and compare preparation time, arithmetic accuracy, evidence linkage, and stakeholder acceptance."},
+    {"id":"POC-03","name":"AI Test Data and Excel Generation","framework":"Complete","prompt":"Pilot","evidence":"Real Data Pending","governance":"Not Assessed","scale":"Not Assessed","nextAction":"Select representative schemas and import flows, generate deterministic datasets, validate rules and privacy, and prove reproducibility from the recorded seed."}
+  ],
+  "nextMilestones": [
+    {"sequence":1,"title":"Confirm POC owners and reviewers","exitCriteria":"Named POC Lead, Human Reviewer, Evidence Owner, and control roles for each POC."},
+    {"sequence":2,"title":"Freeze KPI contracts","exitCriteria":"Formula, denominator, source, baseline, target, and evidence location approved for each KPI."},
+    {"sequence":3,"title":"Collect representative evidence","exitCriteria":"POC-01 has at least 3 stories; POC-02 has at least 10 reporting runs; POC-03 has representative schemas and import flows."},
+    {"sequence":4,"title":"Perform independent validation","exitCriteria":"Material KPI values reproduced and critical quality or governance findings resolved."},
+    {"sequence":5,"title":"Prepare management presentation","exitCriteria":"Evidence-backed benefits, limitations, incidents, costs, residual risks, and scale recommendation approved."}
+  ]
+}
